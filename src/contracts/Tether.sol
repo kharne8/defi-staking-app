@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 contract Tether {
     string public name = 'Mock Tether token';
     string public symbol = 'mUSDT';
-    uint256 public totalSupply = 1000000000000000000000000000;
+    uint256 public totalSupply = 1000000000000000000000000;
     uint8 decimals = 18;
 
     event Transfer(

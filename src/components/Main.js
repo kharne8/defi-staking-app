@@ -23,15 +23,15 @@ const Main = ({
     <div id='content' className='mt-3'>
       <table className='table text-muted text-center'>
         <thead>
-          <tr style={{ color: 'black' }}>
+          <tr style={{ color: 'white' }}>
             <th scope='col'>Staking Balance</th>
             <th scope='col'>Reward Balance</th>
           </tr>
         </thead>
         <tbody>
-          <tr style={{ color: 'black' }}>
-            <td>{web3.utils.fromWei(stakingBalance)} USDT</td>
-            <td>{web3.utils.fromWei(rwdBalance)} RWD</td>
+          <tr style={{ color: 'white' }}>
+            <td>{web3.utils.fromWei(stakingBalance, 'Ether')} USDT</td>
+            <td>{web3.utils.fromWei(rwdBalance, 'Ether')} RWD</td>
           </tr>
         </tbody>
       </table>
@@ -42,7 +42,7 @@ const Main = ({
               <b>Stake Tokens</b>
             </label>
             <span className='float-right text-muted'>
-              Balance: {web3.utils.fromWei(tetherBalance)}
+              Balance: {web3.utils.fromWei(tetherBalance, 'Ether')}
             </span>
           </div>
           <div className='input-group mb-4'>

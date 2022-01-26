@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import ParticleSettings from './ParticleSettings';
 import Main from './Main';
 import Web3 from 'web3';
 import Tether from '../truffle_abis/Tether.json';
@@ -121,7 +122,11 @@ class App extends Component {
     {
       this.state.loading
         ? (content = (
-            <p id='loader' className='text-center' style={{ margin: '30px' }}>
+            <p
+              id='loader'
+              className='text-center'
+              style={{ margin: '30px', color: 'white' }}
+            >
               Loading Please Wait...
             </p>
           ))
@@ -136,7 +141,11 @@ class App extends Component {
           ));
     }
     return (
-      <div className='container'>
+      <div className='App' style={{ position: 'relative' }}>
+        <div style={{ position: 'absolute', backgroundColor: 'black' }}>
+          <ParticleSettings />
+        </div>
+
         <Navbar account={this.state.account} />
         <div className='container-fluid mt-5'>
           <div className='row'>
