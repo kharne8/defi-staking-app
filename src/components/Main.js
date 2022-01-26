@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import tether from '../tether.png';
 import web3 from 'web3';
+import Airdrop from './Airdrop';
 
 const Main = ({
   stakingBalance,
@@ -72,7 +73,7 @@ const Main = ({
           Withdraw
         </button>
         <div className='card-body text-center' style={{ color: 'blue' }}>
-          Airdrop
+          Airdrop <Airdrop stakingBalance={stakingBalance} />
         </div>
       </div>
     </div>

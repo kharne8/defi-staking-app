@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import ParticleSettings from './ParticleSettings';
+
 import Main from './Main';
 import Web3 from 'web3';
 import Tether from '../truffle_abis/Tether.json';
